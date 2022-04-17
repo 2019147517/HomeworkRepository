@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+
+<html>
+    <head>
+        <title>signup page</title>
+        <link rel="stylesheet" type = "text/css" href="main.css">
+    </head>
+    <body>
+        <h1>Welcome to Internet-Programming Shop</h1>
+
+        <p class = "center">
+            <a href = "login.html">로그인</a>
+             회원가입
+        </p>
+
+        <div class = "Info">
+            <form method = "GET">
+                <p>
+                    <label>아이디 : <br/><input name = "id" type = "text" placeholder="아이디를 입력하세요"/></label>
+                </p>
+                <p>
+                    <label>비밀번호 : <br/><input name = "password" type = "password" placeholder="비밀번호를 입력하세요"/></label>
+                </p>
+                <p>
+                    <label>비밀번호 확인 : <br/><input name = "password" type = "password" placeholder="비밀번호 확인"/></label>
+                </p>
+
+                <p class = "center">개인정보(필수)</p>
+                <p>
+                    <label>이름 : <br/><input name = "name" type = "text"/></label>
+                </p>
+                <p>
+                    <label>생년월일 : <br/><input name = "date" type = "date" /></label>
+                </p>
+                <p>
+                    <label for="genderlist">성별 : <br/>
+                        <input name = "gender" type = "text" id="genderlist" list = "gender"/></label>
+                        <datalist id="gender">
+                            <option value = "남자">
+                            <option value = "여자">
+                            <option value = "선택안함">
+                        </datalist>
+                </p>
+                <p>
+                    <label>학년 : <br/><input name = "grade" type = "number" min = "1" max = "7" step ="1"/></label>
+                </p>
+                <p>
+                    <label>전화번호 : <br/><input name = "tel" type = "tel" placeholder = "(###) ####-####" 
+                        pattern = "\(\d{3}\) \d{4}-\d{4}" required/></label>
+                </p>
+                <p>
+                    <label>이메일 : <br/><input name = "email" type = "email"/></label>
+                </p>
+
+
+                <p>
+                    <input type = "submit" value = "가입하기"/>
+                    <input type = "reset" value = "전체삭제"/>
+                </p>
+            </form>
+        </div>
+    </body>
+</html>
